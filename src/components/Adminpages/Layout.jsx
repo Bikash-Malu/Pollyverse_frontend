@@ -87,7 +87,7 @@ const naviagte=useNavigate();
       :
       <>
       {savedData?
-      <div className='w-full h-[100%] overflow-y-auto'>
+      <div className='w-[100vw] h-[100%] overflow-y-auto '>
       <div className=" text-xl text-gray-900 bg-white w-full font-semibold">
        {children}
       </div>

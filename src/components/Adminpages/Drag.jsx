@@ -37,7 +37,7 @@ function Drag() {
   return (
     <Layout className="App">
       <Manager>
-     <div className="w-[80vw] items-center px-5 py-24 -mt-48 "></div>
+     <div className="md:w-[75vw] items-center px-5 py-24 -mt-48 w-[65vw]  "></div>
       <div 
       
         className={`drop-zone ${dragging ? 'dragging' : ''} drag`}

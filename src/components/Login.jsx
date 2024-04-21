@@ -97,7 +97,7 @@ if(email===''||password===''){
         className="md:flex sm:bg-none  md:justify-center items-center md:flex-row flex-col p-28 w-[100%] "
         id="main"
       >
-        <div className={`${layout.section} md:bg-white rounded-2xl `}>
+        <div className={`${layout.section} lg:bg-white rounded-2xl `}>
           <div className={"relative top-8 left-10"} style={{ height: 240 }}>
             <img
               src={loginpage}

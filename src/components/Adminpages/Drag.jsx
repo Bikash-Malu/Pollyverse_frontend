@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './drag.css';
 import Layout from './Layout';
 import Manager from './Manger';
+import axios from 'axios';
 
 function Drag() {
   const [dragging, setDragging] = useState(false);
@@ -31,13 +32,33 @@ function Drag() {
 
   const handleFileInputChange = (e) => {
     const selectedFiles = [...e.target.files];
-    setFiles((prevFiles) => [...prevFiles, ...selectedFiles]);
+    setFiles(selectedFiles[0])
+    console.log(selectedFiles[0])
+  
   };
+  const handleChange=(e)=>{
+    e.preventDefault();
+const fileInput = document.querySelector('input[type="file"]');
+const file = fileInput.files[0];
+const formData = new FormData();
+formData.append('file', file);
+fetch('https://pollyverse.up.railway.app/files/fileupload', {
+  method: 'POST',
+  body: formData,
+})
+.then(response => {
+  console.log('File uploaded successfully',response);
+})
+.catch(error => {
+  console.error('Error uploading file:', error);
+});
+
+  }
 
   return (
     <Layout className="App">
       <Manager>
-     <div className="md:w-[75vw] items-center px-5 py-24 -mt-48 w-[65vw]  "></div>
+     <div className="md:w-[75vw] items-center px-5 py-24 -mt-48 w-[6vw]  "></div>
       <div 
       
         className={`drop-zone ${dragging ? 'dragging' : ''} drag`}
@@ -47,12 +68,16 @@ function Drag() {
         onDrop={handleDrop}
       >
         <p>Drag & drop files here</p>
+        <form action="" onSubmit={handleChange}>
         <input
           type="file"
           id="fileInput"
           multiple
           onChange={handleFileInputChange}
         />
+        
+  <button type="submit" class="  text-white bg-[#8113f0] hover:bg-[#a989c9] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+        </form>
         <label htmlFor="fileInput" className=''>or click to browse</label>
       </div>
       {files.length > 0 && (

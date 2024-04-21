@@ -42,7 +42,7 @@ const Manager = ({children}) => {
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className='relative  flex h-[100vh] w-[100%] overflow-x-hidden border border-gray-800 bg-gradient-to-r from-black to-gray-800 px-8 py-16 shadow-2xl pr-10'
+      className='relative  flex h-[100vh] w-[100%] overflow-x-hidden border border-gray-800 bg-gradient-to-r from-black to-gray-800 px-8 py-16 shadow-2xl'
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300 '

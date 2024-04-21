@@ -10,7 +10,7 @@ const Adduser = () => {
   const[password,setpassword]=useState('')
   const hanleSubmit=async(e)=>{
     e.preventDefault();
-    axios.post("http://pollyverse.up.railway.app/user",{email,username,password}).then((res)=>{
+    axios.post("https://pollyverse.up.railway.app/user",{email,username,password}).then((res)=>{
       let name=res.data.username
       toast.success(`${name} create succesfully`)
       setemail('');

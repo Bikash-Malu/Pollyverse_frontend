@@ -1,0 +1,40 @@
+.paddin{
+    padding: 10px 10px 10px 10px;
+}
+.counttitle{
+    font-weight: 600;
+}
+.counttext{
+    font-size: 14px;
+}
+
+.gradient{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; */
+    display: flex;
+    flex-direction: row;
+    background: rgb(40, 34, 70);
+    background: linear-gradient(158deg, rgba(40, 34, 70,1) 0%, rgb(90, 99, 147)100%);
+}
+.graddd{
+    background: rgb(40, 34, 70);
+    background: linear-gradient(158deg, rgba(40, 34, 70,1) 0%, rgb(90, 99, 147)100%);
+}
+.carden{
+    
+    color: aliceblue;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.cllor{
+    
+    color: aliceblue;
+}
+
+.bgcolor{
+    min-width: 100vh;
+    min-height: 100vh;
+    background: #ECEFF1;
+    background: linear-gradient(158deg, rgb(224, 224, 224)0% rgb(233, 237, 254)100%);
+}

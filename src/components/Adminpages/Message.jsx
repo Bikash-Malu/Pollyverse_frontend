@@ -1,0 +1,15 @@
+import React from 'react'
+import Layout from './Layout'
+import Manager from './Manger'
+
+const Message = () => {
+  return (
+    <Layout>
+      <Manager>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloribus, nam facere quidem vero, repellat ipsum voluptatum alias neque aspernatur sequi deserunt quisquam debitis. Officiis ex explicabo maiores earum, sit repudiandae possimus cum neque quas, nisi voluptates repellendus aperiam autem quasi molestiae ratione atque non distinctio at laborum provident voluptatibus quam. Voluptates aut perspiciatis, unde eligendi voluptas praesentium est tenetur maxime beatae provident? Doloribus officia, voluptates aliquam quasi, aut exercitationem illo impedit minus mollitia animi eius dolorum consequuntur nam quis accusantium voluptatem maiores velit. Unde eum nesciunt labore consequuntur perspiciatis assumenda sapiente quod id deleniti nulla! Est numquam ea, autem a unde consectetur fugit sequi sit culpa cum tenetur ab dignissimos sed, voluptatem saepe veniam ducimus optio rerum! Maxime rem neque temporibus dolore molestias iste consequuntur ut, incidunt at quibusdam sit, inventore ratione laborum! Numquam dicta sed minima quas cupiditate amet, nam voluptatum quis saepe? Voluptatem, illum tempora veniam tenetur repellat commodi modi exercitationem repudiandae nihil nisi. Ducimus nihil, ullam amet eius culpa, maiores aliquam alias nostrum aut quisquam quibusdam velit quaerat non sint dolorum sit cupiditate doloribus, voluptatibus omnis necessitatibus quis error cum. Error est quo, temporibus quisquam corporis fugit eum saepe enim ullam autem, ipsa iure possimus! Cumque sequi quo tempore ipsa accusantium perspiciatis aperiam maxime velit illo recusandae. Minus consequuntur, suscipit in nam, deleniti eius aperiam temporibus nulla excepturi eos ex, atque illum tenetur exercitationem laudantium et veniam earum dolorum quam non. Itaque dolorum atque, quisquam dolore repellat aliquam velit, sed aut beatae enim dolorem saepe minima accusamus, quas nobis tempore soluta. Cupiditate accusamus, quam praesentium aut voluptatibus aperiam eligendi sint. Quo non, ratione nemo, sapiente eaque impedit sed aspernatur debitis et eveniet sunt explicabo illum sequi quia perferendis mollitia tempora repudiandae, laborum atque? Inventore, officia quo quod excepturi odio eum modi eaque laborum eligendi quos cum tenetur tempore, laudantium officiis impedit quas maxime dolor facere itaque aut earum ad voluptate placeat esse? Non et eius obcaecati soluta? Totam voluptas laborum, obcaecati autem porro architecto quos dignissimos id facere beatae optio corrupti ad ratione, quae minima. Aliquid esse doloremque error distinctio explicabo sed, porro nemo nam fugiat accusantium dolores molestiae dicta quod deserunt iure. Vel ex impedit amet expedita. Fugit veniam beatae similique? Tenetur quo assumenda dolorem voluptatum enim quaerat odit repudiandae. Accusantium atque ullam vitae ducimus nobis deserunt quidem quo dicta quasi ratione hic aliquid, iste ea officiis exercitationem sit dolor sed? Ipsa, dolorum atque. Quaerat?
+        </Manager>
+      </Layout>
+  )
+}
+
+export default Message

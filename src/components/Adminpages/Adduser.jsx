@@ -3,6 +3,7 @@ import Layout from './Layout'
 import Manager from './Manger'
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { BASE_URL } from './url';
 
 const Adduser = () => {
   const[email,setemail]=useState('');
@@ -10,7 +11,7 @@ const Adduser = () => {
   const[password,setpassword]=useState('')
   const hanleSubmit=async(e)=>{
     e.preventDefault();
-    axios.post("https://pollyverse.up.railway.app/user",{email,username,password}).then((res)=>{
+    axios.post(`${BASE_URL}/user`,{email,username,password}).then((res)=>{
       let name=res.data.username
       toast.success(`${name} create succesfully`)
       setemail('');

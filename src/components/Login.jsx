@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
+import { BASE_URL } from "./Adminpages/url";
 const Login = () => {
   const[email,setemail]=useState('');
   const[password,setpassword]=useState('')
@@ -30,7 +31,7 @@ if(email===''||password===''){
 }
   event.preventDefault();
   try {
-    await axios.post("https://pollyverse.up.railway.app/user/login", {
+    await axios.post(`${BASE_URL}/user/login`, {
       email: email,
       password: password,
       }).then((res) => 

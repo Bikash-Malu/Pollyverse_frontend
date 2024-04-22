@@ -3,6 +3,8 @@ import './drag.css';
 import Layout from './Layout';
 import Manager from './Manger';
 import axios from 'axios';
+import { BASE_URL } from './url';
+import { toast } from 'react-toastify';
 
 function Drag() {
   const [dragging, setDragging] = useState(false);
@@ -42,15 +44,15 @@ const fileInput = document.querySelector('input[type="file"]');
 const file = fileInput.files[0];
 const formData = new FormData();
 formData.append('file', file);
-fetch('https://pollyverse.up.railway.app/files/fileupload', {
+fetch(`${BASE_URL}/files/fileupload`, {
   method: 'POST',
   body: formData,
 })
 .then(response => {
-  console.log('File uploaded successfully',response);
+  toast.success('File uploaded successfully');
 })
 .catch(error => {
-  console.error('Error uploading file:', error);
+  toast.error('Error uploading file:');
 });
 
   }
@@ -75,8 +77,10 @@ fetch('https://pollyverse.up.railway.app/files/fileupload', {
           multiple
           onChange={handleFileInputChange}
         />
-        
-  <button type="submit" class="  text-white bg-[#8113f0] hover:bg-[#a989c9] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+        <div>
+        <button type="submit" class="  text-white bg-[#8113f0] hover:bg-[#a989c9] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+
+        </div>
         </form>
         <label htmlFor="fileInput" className=''>or click to browse</label>
       </div>

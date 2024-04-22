@@ -26,7 +26,7 @@ const Home = () => {
       <Modal   open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <h1 className='text-black text-2xl font-semibold'>edit here </h1>
       </Modal>
-      <div className="grid  grid-cols-1 md:grid-cols-2 gap-4 text-center mx-auto">
+      <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 text-center mx-auto">
   <div className="bg-white shadow-lg rounded-lg overflow-hidden">
     
     <div className="px-6 py-10">
@@ -41,6 +41,14 @@ const Home = () => {
       <h2 className="text-gray-900 font-bold text-2xl">Add User </h2>
       <p className="mt-2 text-gray-600">Here you can add number of users. The way are given below</p>
       <Link to={'/adduser'} className=" w-36 h-12   mx-auto mt-4 bg-[#8113f0] hover:bg-[#946dbb] text-white font-bold py-2 px-6 gap-2 rounded flex items-center"><HiOutlineUserAdd size={20}/>Add user</Link>
+    </div>
+  </div>
+  <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+    
+    <div className="px-6 py-10">
+      <h2 className="text-gray-900 font-bold text-2xl">View Models </h2>
+      <p className="mt-2 text-gray-600">Here you can see all models. The way are given below</p>
+      <Link to={'/show'} className=" w-36 h-12   mx-auto mt-4 bg-[#8113f0] hover:bg-[#946dbb] text-white font-bold py-2 px-6 gap-2 rounded flex items-center"><HiMiniViewfinderCircle size={20}/>Models</Link>
     </div>
   </div>
   <div className='w-[79vw] mr-[40%]'>

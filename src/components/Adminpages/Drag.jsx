@@ -84,6 +84,7 @@ fetch(`${BASE_URL}/files/fileupload`, {
         </form>
         <label htmlFor="fileInput" className=''>or click to browse</label>
       </div>
+      <div>
       {files.length > 0 && (
         <div className="file-list">
           <h2 className='md:text-2xl'>Uploaded Files:</h2>
@@ -92,8 +93,10 @@ fetch(`${BASE_URL}/files/fileupload`, {
               <li key={index}>{file.name}</li>
             ))}
           </ul>
-        </div>
+          </div>
+       
       )}
+       </div>
       <div>
         
 <form class=" md:mx-[9%] md:w-[90%] sm:w-[80%] bg-transparent lg:w-[85%] w-[80%]  p-4 rounded-xl  hover:shadow-lg transition duration-300 mt-8 " >

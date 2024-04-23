@@ -26,9 +26,9 @@ const Adduser = () => {
     <Layout>
       <Manager>
       
-<div className=''>
+<div className='w-full'>
 
-<form class=" md:mx-[37%] md:w-[600px]  bg-gray-800 bg-transparent lg:w-[500%] w-[250px] border-solid border-2 p-4 rounded-xl  hover:shadow-lg transition duration-300" onSubmit={hanleSubmit}>
+<form class="  md:w-[60%]  bg-gray-800 bg-transparent lg:w-[550%] mx-1 w-[250px] border-solid border-2 p-4 rounded-xl  hover:shadow-lg transition duration-300" onSubmit={hanleSubmit}>
     <h1 className='mx-auto text-2xl text-center mb-2'>ADD USER!!</h1>
   <div class="relative z-0 w-full mb-5 group">
       <input value={username}  onChange={(e)=>{setusername(e.target.value)}} type="text" name="username" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />

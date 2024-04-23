@@ -51,7 +51,7 @@ const Home = () => {
       <Link to={'/show'} className=" w-36 h-12   mx-auto mt-4 bg-[#8113f0] hover:bg-[#946dbb] text-white font-bold py-2 px-6 gap-2 rounded flex items-center"><HiMiniViewfinderCircle size={20}/>Models</Link>
     </div>
   </div>
-  <div className='w-[79vw] mr-[40%]'>
+  <div className='w-[309%] mr-[40%]'>
     
 
 <div className="relative overflow-x-auto shadow-2xl sm:rounded-lg">

@@ -1,0 +1,13 @@
+.centr{
+    position: fixed;
+    top: 15%;
+    left:30%;
+    width: 800px;
+    /* margin-top: -50%;
+    margin-left: -50%; */
+}
+.centr h1{
+    justify-content: center;
+    align-items: center;
+    padding-left: 230px;
+}

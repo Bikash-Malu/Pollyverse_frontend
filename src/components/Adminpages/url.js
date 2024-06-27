@@ -1,1 +1,1 @@
-export const BASE_URL='http://pollyverse-backend-production.up.railway.app'
+export const BASE_URL='https://pollyverse-backend-production.up.railway.app'
